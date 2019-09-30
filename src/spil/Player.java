@@ -1,9 +1,10 @@
 package spil;
-
+//ny Player class
 public class Player {
+//attributter
     private int points = 0;
     private String name;
-
+//constructor
     public Player(String playerName){
         name = playerName;
     }
