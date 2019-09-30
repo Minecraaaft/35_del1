@@ -1,5 +1,6 @@
 package test;
 
+import desktop_resources.GUI;
 import spil.Die;
 import spil.Player;
 
@@ -12,6 +13,9 @@ public class Test {
         Die d1 = new Die();
         d1.roll();
         System.out.println(d1.getFaceValue());
+
+
+        GUI.setDice(5,3);
 
     }
 }
