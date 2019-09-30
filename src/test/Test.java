@@ -13,9 +13,6 @@ public class Test {
         Die d1 = new Die();
         d1.roll();
         System.out.println(d1.getFaceValue());
-
-
-        GUI.setDice(5,3);
-
+        GUI.setDice(2,2);
     }
 }
