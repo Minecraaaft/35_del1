@@ -20,13 +20,21 @@ public class Game {
         faceValueSum = d1.roll() + d2.roll();
 
         System.out.println(faceValueSum);
-
-
     }
 
 
     public static void main(String[] args) {
-        Player p1 = new Player("John");
-        turn(p1);
+
+        Player player1 = new Player("John");
+        Player player2 = new Player("Bob");
+
+        do {
+            turn(player1);
+            if (player1.getPoints() >= 40)
+                break;
+
+            turn(player2);
+        } while (player1.getPoints() < 40 && player2.getPoints() < 40);
+
     }
 }
