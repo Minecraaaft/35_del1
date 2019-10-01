@@ -10,7 +10,7 @@ public class Die {
     public Die() {
     }
 
-    //metoder
+    //generates a number from 1-6 to faceValue and also returns it.
     public int roll() {
         Random random = new Random();
         faceValue = random.nextInt(6) + 1;

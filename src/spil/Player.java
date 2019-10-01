@@ -21,11 +21,12 @@ public class Player {
         return name;
     }
 
-    public static void turn(){
+    public void rollDice(){
         int faceValueSum;
-
+        //two Die objects are made
         Die d1 = new Die();
         Die d2 = new Die();
+
         faceValueSum = d1.roll() + d2.roll();
 
         System.out.println(faceValueSum);

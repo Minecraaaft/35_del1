@@ -8,6 +8,7 @@ public class Game {
         Player player2 = new Player("Bob");
 
         do {
+
             player1.turn();
             if (player1.getPoints() >= 40)
                 break;
