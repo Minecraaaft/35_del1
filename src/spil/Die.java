@@ -6,7 +6,7 @@ public class Die {
     //instans variabler/attributer
     private int faceValue;
 
-    //konstruktor
+    //konstruktor - der er allerede en default tom konstruktør
     public Die() {
     }
 

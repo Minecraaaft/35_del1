@@ -1,4 +1,6 @@
-package spil;
+package game;
+
+import spil.Player;
 
 public class Game {
 
@@ -9,11 +11,11 @@ public class Game {
 
         do {
 
-            player1.turn();
+            player1.rollDice();
             if (player1.getPoints() >= 40)
                 break;
 
-            player2.turn();
+            player2.rollDice();
         } while (player1.getPoints() < 40 && player2.getPoints() < 40);
 
     }
