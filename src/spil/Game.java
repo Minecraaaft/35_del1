@@ -12,7 +12,7 @@ public class Game {
             if (player1.getPoints() >= 40)
                 break;
 
-            player1.turn();
+            player2.turn();
         } while (player1.getPoints() < 40 && player2.getPoints() < 40);
 
     }
