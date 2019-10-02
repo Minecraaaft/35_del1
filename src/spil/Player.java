@@ -33,6 +33,12 @@ public class Player {
         System.out.println(name + " rolled a sum total of " + faceValueSum);
         System.out.println(name + " has this many points: " + points);
 
+        if (d1.getFaceValue() == 1 && d2.getFaceValue() == 1){
+            System.out.println(name + " loses all points");
+            setPoints(0);
+            System.out.println(name + " now has " + points + " points");
+        }
+
         if (d1.getFaceValue() == d2.getFaceValue()) {
             System.out.println(name + " gets an extra Turn");
             rollDice();
