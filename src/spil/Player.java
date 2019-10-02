@@ -28,7 +28,11 @@ public class Player {
         Die d2 = new Die();
 
         faceValueSum = d1.roll() + d2.roll();
+        points = points + faceValueSum;
 
-        System.out.println(faceValueSum);
+        System.out.println(name + " rolled a sum total of " + faceValueSum);
+        System.out.println(name + " has this many points: " + points);
     }
+
+
 }
