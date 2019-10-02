@@ -20,13 +20,18 @@ public class Test {
         int roll10 = 0;
         int roll11 = 0;
         int roll12 = 0;
-
+        int same = 0;
 
 
 
         for(int i = 1; i <= 1000; i++){
             d1.roll();
             d2.roll();
+
+            if (d1.getFaceValue() == d2.getFaceValue()){
+                same++;
+            }
+
             int sum = d1.getFaceValue() + d2.getFaceValue();
             switch (sum){
                 case 2:
@@ -80,6 +85,7 @@ public class Test {
         System.out.println("12'ere: " + roll12);
         System.out.println("Samlet antal kast: " + (roll2 + roll3 + roll4 + roll5 + roll6 + roll7 + roll8 + roll9 + roll10 + roll11 +
                 roll12)) ;
+        System.out.println("Ens værdi: " + same + " ud af 1000 kast");
 
     }
 }
