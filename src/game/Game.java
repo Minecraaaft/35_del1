@@ -12,11 +12,11 @@ public class Game {
         do {
 
             player1.rollDice();
-            if (player1.getPoints() >= 40)
+            if (player1.getHasWon())
                 break;
 
             player2.rollDice();
-        } while (player1.getPoints() < 40 && player2.getPoints() < 40);
+        } while (player1.getHasWon() || player2.getHasWon());
 
     }
 }
