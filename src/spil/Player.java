@@ -9,7 +9,6 @@ public class Player {
         name = playerName;
     }
 
-
     public void setPoints(int points) {
         this.points = points;
     }
@@ -20,5 +19,16 @@ public class Player {
 
     public String getName() {
         return name;
+    }
+
+    public void rollDice(){
+        int faceValueSum;
+        //two Die objects are made
+        Die d1 = new Die();
+        Die d2 = new Die();
+
+        faceValueSum = d1.roll() + d2.roll();
+
+        System.out.println(faceValueSum);
     }
 }
