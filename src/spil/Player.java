@@ -37,25 +37,27 @@ public class Player {
         points = points + faceValueSum;
 
         System.out.println(name + " rolled a sum total of " + faceValueSum);
-        System.out.println(name + " has this many points: " + points);
 
         if (points >= 400) {
             hasWon = true;
+            System.out.println(name + " has this many points: " + points);
             System.out.println(name + " has won!");
             return;
         }
 
 
         if (d1.getFaceValue() == 1 && d2.getFaceValue() == 1){
+            System.out.println(name + " rolled two 1's");
             System.out.println(name + " loses all points");
             setPoints(0);
-            System.out.println(name + " now has " + points + " points");
         }
+
+        System.out.println(name + " has this many points: " + points);
 
         if (faceValueSum == 12) {
             if(double6){
                 hasWon = true;
-                System.out.println(name + " has won!");
+                System.out.println(name + " has won by rolling two 6's two times in a row!");
                 return;
             }
             double6 = true;
