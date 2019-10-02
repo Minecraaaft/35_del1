@@ -38,7 +38,7 @@ public class Player {
 
         System.out.println(name + " rolled a sum total of " + faceValueSum);
 
-        if (points >= 400) {
+        if (points >= 40) {
             hasWon = true;
             System.out.println(name + " has this many points: " + points);
             System.out.println(name + " has won!");
