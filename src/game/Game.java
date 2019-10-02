@@ -16,7 +16,7 @@ public class Game {
                 break;
 
             player2.rollDice();
-        } while (player1.getHasWon() || player2.getHasWon());
+        } while (!player1.getHasWon() && !player2.getHasWon());
 
     }
 }

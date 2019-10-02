@@ -39,9 +39,10 @@ public class Player {
         System.out.println(name + " rolled a sum total of " + faceValueSum);
         System.out.println(name + " has this many points: " + points);
 
-        if (points >= 40) {
+        if (points >= 400) {
             hasWon = true;
             System.out.println(name + " has won!");
+            return;
         }
 
 
@@ -52,9 +53,11 @@ public class Player {
         }
 
         if (faceValueSum == 12) {
-            if(double6)
+            if(double6){
                 hasWon = true;
-            System.out.println(name + " has won!");
+                System.out.println(name + " has won!");
+                return;
+            }
             double6 = true;
         } else
             double6 = false;
