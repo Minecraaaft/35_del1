@@ -41,7 +41,6 @@ public class Player {
 
         if (pointsBeforeRoll >= 40 && d1.getFaceValue() == d2.getFaceValue()) {
             hasWon = true;
-            System.out.println(name + " has this many points: " + points);
             System.out.println(name + " has won!");
             return;
         }
@@ -53,7 +52,11 @@ public class Player {
             setPoints(0);
         }
 
-        System.out.println(name + " has this many points: " + points);
+        if (pointsBeforeRoll >= 40) {
+            System.out.println("You've got +40 points (" + points +  ") and need a pair to win");
+        } else
+            System.out.println(name + " has this many points: " + points);
+
 
         if (faceValueSum == 12) {
             if(double6){
