@@ -15,7 +15,7 @@ public class Game {
         Player player1 = new Player(name1);
         Player player2 = new Player(name2);
 
-        System.out.print("\nPress enter to roll dice, first to roll a pair after 40 points win.");
+        System.out.println("\nPress enter to roll dice, first to roll a pair after 40 points win.");
         System.out.println("Rolling a pair gives an extra turn, a pair 1s loses all points ");
         System.out.println("and a pair 6s two times in a row automatically wins.");
 
