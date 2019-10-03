@@ -29,6 +29,7 @@ public class Player {
 
     public void rollDice(){
         int faceValueSum;
+        int pointsBeforeRoll = points;
         //two Die objects are made
         Die d1 = new Die();
         Die d2 = new Die();
@@ -36,9 +37,9 @@ public class Player {
         faceValueSum = d1.roll() + d2.roll();
         points = points + faceValueSum;
 
-        System.out.println(name + " rolled a sum total of " + faceValueSum);
+        System.out.println(name + " rolled a " + d1.getFaceValue() + " and " + d2.getFaceValue() + " for a sum total of " + faceValueSum);
 
-        if (points >= 40) {
+        if (pointsBeforeRoll >= 40 && d1.getFaceValue() == d2.getFaceValue()) {
             hasWon = true;
             System.out.println(name + " has this many points: " + points);
             System.out.println(name + " has won!");
@@ -68,6 +69,8 @@ public class Player {
             System.out.println(name + " gets an extra Turn");
             rollDice();
         }
+
+
     }
 
 
