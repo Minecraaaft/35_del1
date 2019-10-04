@@ -55,7 +55,7 @@ public class Player {
         if (pointsBeforeRoll >= 40) {
             System.out.println("You've got +40 points (" + points +  ") and need a pair to win");
         } else
-            System.out.println(name + " has this many points: " + points);
+            System.out.println(name + " now has: " + points + " points");
 
 
         if (faceValueSum == 12) {
